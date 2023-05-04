@@ -11,31 +11,33 @@
 </head>
 <body>
     <header class="bg-dblue">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid d-flex justify-content-between">
-              <a class="navbar-brand text-white" href="#"><strong>START BOOSTRAP</strong></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">                  
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">PORTFOLIO</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">ABOUT</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" href="#">CONTACT</a>
-                    </li>
-                </ul>                
-              </div>
-            </div>
-        </nav>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <a class="navbar-brand text-white" href="#"><strong>START BOOSTRAP</strong></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">                  
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">CONTACT</a>
+                        </li>
+                    </ul>                
+                </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <!-- START BOOTSTRAP -->
-        <section class="container text-white text-center bg-green">
+        <section class="big-container text-white text-center bg-green">
             <div class="row">
                 <div class="col-5 offset-4 col-md-4 offset-md-4 col-lg-2 offset-lg-5 pt-3">
                     <img src="img/avatar.svg" alt="Avatar image img-fluid">
@@ -105,8 +107,8 @@
                 </div>
             </div>
         </section>
-        <!-- ABAUT US SECTION -->
-        <section class="container bg-green text-center text-white p-5">
+        <!-- ABOUT US SECTION -->
+        <section class="big-container bg-green text-center text-white p-5">
             <div class="row">
                 <h2>
                     <strong>ABOUT</strong>
@@ -137,19 +139,54 @@
             </div>
             <div class="row mt-3">
                 <div class="col-6 offset-3">
-                    <button class="rounded p-2 bg-green border-light text-white">
-                        <i class="fa-solid fa-download"></i>Download
+                    <button type="button" class="btn btn-light text-white bg-green">
+                        <i class="fa-solid fa-download"></i> Download
                     </button>
                 </div>
             </div>
         </section>
         <!-- CONTACT ME SECTION -->
-        <section class="container">
-            <div class="row">
-                <div class="col">
-
+        <section class="container mt-5">
+            <div class="row text-center">
+                <h2>
+                    <strong>CONTACT ME</strong>
+                </h2>
+            </div>
+            <div class="row text-center">
+                <div class="col-3 offset-2 col-md-2 offset-md-3">
+                    <hr>
+                </div>
+                <div class="col-2">                    
+                    <i class="fa-solid fa-star "></i>                    
+                </div>
+                <div class="col-3 col-md-2">
+                    <hr>
                 </div>
             </div>
+            <div class="form-floating mb-3">
+                <input type="name" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="name">
+                <label for="floatingEmptyPlaintextInput">Name</label>
+            </div>
+            <hr>
+            <div class="form-floating mb-3">
+                <input type="email" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="name@example.com">
+                <label for="floatingPlaintextInput">Email address</label>
+            </div>
+            <hr>
+            <div class="form-floating mb-3">
+                <input type="number" readonly class="form-control-plaintext" id="floatingPlaintextInput" placeholder="phone number">
+                <label for="floatingEmptyPlaintextInput">Phone number</label>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                </div>
+            </div>
+            <button type="button" class="btn btn-success mb-5 bg-green">Send</button>
         </section>
     </main>
     <!-- FOOTER SECTION -->
