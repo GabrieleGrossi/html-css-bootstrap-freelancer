@@ -7,3 +7,6 @@
 .bg-lblue{
     background-color: #3a546d;
 }
+.container{
+    max-width: 100%;
+}
